@@ -1,0 +1,284 @@
+/* サイト全体の設定 */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+
+/* メニューバースタイル */
+
+a.selecter:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(72, 72, 72);
+}
+
+nav {
+    margin: 0%;
+    width: 100%;
+    height: 70px;
+    background-color: dimgray;
+    padding-top: 5px;
+    box-sizing: border-box;
+    box-shadow: #22222266;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-right: 35px;
+  }
+
+/* メニューバースタイル */
+
+/* トリミングスタイル */
+
+.box{
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+  }
+  .cat {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .box-1 {
+    transform: skewY(45deg);
+  }
+  .box-1 .cat {
+    transform: skewY(-45deg);
+  }
+  .box-2 {
+    transform: skewY(-45deg);
+  }
+  .box-2 .cat {
+    transform: skewY(45deg);
+  }
+  body {
+    margin: 20px;
+  }
+
+/* トリミングスタイル */
+
+/* 動画スタイル */
+header{ top:0; z-index:100; }
+main > section{ max-width:640px; margin:0 auto; padding-top:57px; }
+main > section h2{ margin-bottom:10px; color:#548ae5; font-size:18px; }
+main > section p{ margin:10px 0 0; color:#484848; font-size:14px; }
+.video-js{
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    padding-top:56.25%;/*比率調整※16:9の画面幅*/
+    border:5px solid rgb(200,225,0);
+    color:#fff;
+    background:rgb(200,225,0);
+}
+.video-js .vjs-tech{ outline:none; }
+.video-js .vjs-big-play-button:focus{ background:none; }
+/*再生ボタン(大)*/
+.video-js:hover .vjs-big-play-button,
+.video-js .vjs-big-play-button{
+    height:90px;
+    width:90px;
+    border:3px dotted #ffff70;/*ドット枠線*/
+    border-radius:50%;/*形を丸に*/
+    font-size:5em;/*三角の大きさ変更*/
+    line-height:90px;
+    background:rgba(68,215,77,.5);
+    /*動画の中心に再生ボタンを移動*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+/*再生ボタンをマウスオーバーしたら*/
+.video-js .vjs-big-play-button:hover{ background:rgba(215,255,0,.7); }
+/*コントローラー*/
+.video-js .vjs-control-bar{ background:rgba(68,215,77,.5);}
+/*再生バー*/
+.video-js .vjs-slider,
+.video-js .vjs-load-progress div{ background:rgba(92,215,230,.8); }
+/* 動画スタイル */
+
+
+.example>div{
+    border: 1px solid #999;
+    background: #f2f2f2;
+    padding: 10px;
+    margin: 10px;
+}
+@media(min-width:751px){
+    .sp{
+        display: none !important;
+    }
+}
+@media(max-width:750px){
+    .pc{
+        display: none !important;
+        /* margin: 0%; */
+    }
+}
+@media(max-width:1400px){
+    .pc2{
+        display: none !important;
+        /* margin: 0%; */
+    }
+}
+
+li .toppage {
+    text-align: center;
+    list-style:none
+}
+
+#header_nav {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #440088;
+    background-color: #fff;
+    border-bottom: 2px solid  #440088;
+}
+
+.header__list {
+    height: 100%;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}  
+
+h1 {
+    line-height: 15px;
+    padding: 0;
+    margin: 0;
+}
+p {
+    line-height: 15px;
+}
+
+.title-pc {
+    text-align: center;
+}
+
+
+.page {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff;
+}
+
+.lineup__index {
+    /*for position absolute overlay*/
+    position: relative;
+    /*for centering description*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toppage {
+    width: 50px;
+}
+
+
+ol {
+    /*2px 水色 破線を指定*/
+    border: 2px skyblue dashed; 
+  }
+
+details {
+    z-index: +100;
+    position: fixed;
+    right: -25px;
+    top: 15px;
+    text-align: right;
+    list-style: none;
+}
+
+.menu img {
+    width: 50px;
+    padding-right: 35px;
+}
+
+.menu a{
+    background-color: rgb(111, 111, 111);
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+    padding-right: 0px;
+    font-size: 30px;
+    text-align: right;
+}
+.menu a:hover {
+    text-align: right;
+    padding-right: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(152, 152, 152);
+}
+
+.toppagestyle div {
+    background-color: dimgray;
+    margin: 0%;
+
+}
+
+.logoimg a:hover {
+    background-color: rgb(72, 72, 72);
+}
+
+.toppagestyle {
+    margin: 0%;
+    padding: 3px;
+    color: #fff;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: dimgray;
+
+    display: block;
+    margin: 0;
+    color: aliceblue;
+    /* box-shadow: 0 0 25px gray; */
+}
+
+.toppagestyle p {
+    padding-left: 5%;
+}
+
+
+/* 文字 */
+
+h2 {
+    margin-top: -60px;
+    font-size: 55px;
+    text-align: center;
+}
+
+.subtitle {
+    line-height: 30px;
+    margin-top: -30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.spell {
+    margin: 10%;
+}
